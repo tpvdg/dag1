@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* TAG STYLING */
+        p {
+            color:green;
+        }
+
+        /*CLASS STYLING*/
+        .template1{
+            background-color: lightgrey;
+            font-size: 120%;
+        }
+
+        /*ID STYLING*/
+        #img1{
+            border: 12px solid yellow;
+            width: 320px;
+        }
+    </style>
+
+    <script>
+        //comment
+        /*Ook
+        een comment*/
+
+        let a = 6;
+        let b = "Hello world";
+        let c = false;
+
+        //const is niet aan te passen
+
+        const d = 12;
+
+        //function declaration
+
+        function addition(){
+            let a = document.getElementById("input1").value;
+            let b = 4;
+            let totaal = a + b;
+
+            alert("Totaal is " + totaal);
+        }
+
+        //function call
+        addition();
+    </script>
+</head>
+<body>
+    <!--Comment-->
+
+    <!--Headers, moet genummerd-->
+    <h1>Mijn website</h1>
+    <h2>Dit is mijn eerste website</h2>
+
+    <!--Teksten-->
+    <p>Dit is mijn eerste paragraaf</p>
+    <p>Dit is mijn tweede paragraaf</p>
+
+    <span style="color:red; background-color: aquamarine;">Dit is mijn eerste span</span>
+    <span>Dit is mijn tweede span</span>
+
+
+    <!--Lijsten-->
+    <!--Unordered List-->
+    <ul>
+        <li class="template1">List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+    <!--Ordered List-->
+    <ol class="template2 template1">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ol>
+
+    <table>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+        <tr>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+        </tr>
+    </table>
+
+    <img id="img1" src="image.jpeg" width="500">
+
+    <br>
+
+    <a href="http://www.w3schools.com">
+        Klik hier
+    </a>
+
+    <br>
+
+    <input type="text" id="input1">
+    
+    <br>
+
+    <button type="button" onclick="addition()">
+        Addition
+    </button>
+
+</body>
+</html>

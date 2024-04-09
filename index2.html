@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            border:2px solid lightblue;
+            border-radius: 20px;
+        }
+
+        td {
+            border: 2px solid black;
+        }
+
+        .template1 {
+            border:2px solid black;
+        }
+
+        #header1 {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script>
+
+        function addition(){
+            let value1 = document.getElementById("labradors").value;
+            let value2 = document.getElementById("rottweilers").value;
+
+            let totaal = parseInt(value1) + parseInt(value2);
+
+            alert("U heeft " + totaal + " puppies gekocht, gefeliciteerd!")
+        }
+
+        function division(){
+            let value1 = document.getElementById("Kilo").value;
+            let value2 = document.getElementById("Puppies").value;
+
+            let totaal = parseInt(value1) / parseInt(value2);
+
+            alert("U heeft voor " + totaal + " dagen voer in huis")
+        }
+
+    </script>
+</head>
+<body>
+    <h1 id="header1">
+        Koop hier uw puppies!
+    </h1>
+
+    <img src="puppy.jpg" width="400">
+
+    <p>
+        Slechts €800!
+    </p>
+
+
+    <h2>
+        Of deze puppy!
+    </h2>
+
+    <img src="puppy2.jpg" width ="400">
+
+    <p>
+        Ook maar €800!
+    </p>
+
+    <span style="font-family: papyrus">
+        Netjes gefokte puppies met stamboom.
+    </span>
+
+    <ul>
+        <li>Labradors</li>
+        <li>Poedels</li>
+        <li>Rottweilers</li>
+        <li>Huskies</li>
+    </ul>
+
+    <table class="template1">
+        <tr>
+            <td>Locatie Amsterdam</td>
+            <td>Locatie Utrecht</td>
+        </tr>
+        <tr>
+            <td>2 labradors</td>
+            <td>1 labrador</td>
+        </tr>
+        <tr>
+            <td>1 poedel</td>
+            <td>3 poedels</td>
+        </tr>
+        <tr>
+            <td>4 rottweilers</td>
+            <td>2 rottweilers</td>
+        </tr>
+        <tr>
+            <td>3 huskies</td>
+            <td>2 huskies</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <input type="number" id="labradors">
+    <input type="number" id="rottweilers">
+
+    <button type="button" onclick="addition()">
+    Koop puppies!
+    </button>
+
+    <input type="number" id="Kilo">
+    <input type="number" id="Puppies">
+
+    <button type="button" onclick="division()">
+    Bereken voer
+    </button>
+</body>
+</html>
